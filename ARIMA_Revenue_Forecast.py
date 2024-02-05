@@ -4,7 +4,10 @@ import matplotlib.pyplot as plt
 from pmdarima import auto_arima
 
 
-data = pd.read_excel('Revenuetest.xlsx')
+# data = pd.read_excel('Revenuetest.xlsx')
+# data = pd.read_excel('decreaseRevenue.xlsx')
+# data = pd.read_excel('increaseRevenue.xlsx')
+data = pd.read_excel('SeasonalRevenuetry.xlsx')
 time_series_column = data['Month']
 revenue_column = data['Revenue']
 

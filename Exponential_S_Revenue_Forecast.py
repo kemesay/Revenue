@@ -22,7 +22,10 @@ from sklearn.model_selection import TimeSeriesSplit
 # Initialize the Exponential Smoothing model
 # data = pd.read_excel('Revenuetest.xlsx')
 
-data = pd.read_excel('Realrevenuetry.xlsx')
+# data = pd.read_excel('Revenuetest.xlsx')
+# data = pd.read_excel('decreaseRevenue.xlsx')
+# data = pd.read_excel('increaseRevenue.xlsx')
+data = pd.read_excel('SeasonalRevenuetry.xlsx')
 data.set_index('Month', inplace=True)
 
 

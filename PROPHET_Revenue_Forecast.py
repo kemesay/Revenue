@@ -3,7 +3,13 @@ import pandas as pd
 from prophet import Prophet
 import matplotlib.pyplot as plt
 
-data = pd.read_excel('Revenuetest.xlsx')
+# data = pd.read_excel('Revenuetest.xlsx')
+# data = pd.read_excel('decreaseRevenue.xlsx')
+# data = pd.read_excel('increaseRevenue.xlsx')
+data = pd.read_excel('SeasonalRevenuetry.xlsx')
+
+
+
 data.rename(columns={'Month': 'ds', 'Revenue': 'y'}, inplace=True)
 
 prophet_model = Prophet()
@@ -24,7 +30,6 @@ plt.title('Prophet Forecast')
 plt.xlabel('Month')
 plt.ylabel('Revenue')
 plt.show()
-
 
 
 ########################################################################################################################
